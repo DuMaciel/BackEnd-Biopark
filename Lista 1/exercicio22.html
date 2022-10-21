@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const num = parseInt(prompt("Digite o numero inteiro que voce deseja saber a tabuada"));
+        let vetor = [];
+       
+        for (let i = 0; i <= 10; i++) {
+            const result = num * i;
+            vetor.push({num,result});
+        }
+        console.table(vetor);
+    </script>
+</body>
+
+</html>

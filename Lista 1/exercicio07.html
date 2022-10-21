@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const Cent1 = prompt("Digite quantas moedas de 1 centavo voce tem: ");
+        const Cent5 = prompt("Digite quantas moedas de 5 centavo voce tem: ");
+        const Cent10 = prompt("Digite quantas moedas de 10 centavo voce tem: ");
+        const Cent25 = prompt("Digite quantas moedas de 25 centavo voce tem: ");
+        const Cent50 = prompt("Digite quantas moedas de 50 centavo voce tem: ");
+        const Real1 = prompt("Digite quantas moedas de 1 real voce tem: ");
+
+
+        const result = ((Cent1 * 0.01) + (Cent5 * 0.05) + (Cent10 * 0.10) + (Cent25 * 0.25) + (Cent50 * 0.50) + (Real1 * 1))
+
+        alert("O total que Pedrinho tem é: R$" + result.toFixed(2));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  --blue-light: #85e3ee;
+  --blue-medium: #46b2bd;
+  --blue-dark: #07818c;
+  --grey: #a2bdcf;
+  font-family: "Inter", sans-serif;
+  font-size: 900;
+  
+}
+body {
+  max-width: 60rem;
+  height: 100vh;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body .opcoes .formas p {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  padding: 2rem 0;
+  font-size: 2.5rem;
+}
+p {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  
+}
+div.opcoes {
+  display: block;
+  justify-content: space-between;
+}
+button.formas {
+  overflow: hidden;
+  border-radius: 0.8rem;
+  width: 24rem;
+  height: 20rem;
+  align-items: initial;
+  padding: 0;
+  margin-bottom: 0.2rem;
+  background-color: rgb(52, 133, 255, 0.1);
+}
+
+button:hover {
+  background-color: rgb(52, 133, 255, 0.2);
+}
+.formas.clicado {
+  background-color: rgb(52, 133, 255, 0.4);
+}
+
+button .img {
+  width: 20rem;
+}
+input {
+  width: 20rem;
+  height: 2rem;
+}
+
+.forms {
+  margin-top: 8px;
+  padding: 10px;
+  background-color: rgb(52, 133, 255, 0.1);
+}
+
+.forms.resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.calcular {
+  width: 10rem;
+  height: 4rem;
+  background-color: rgb(52, 133, 255);
+  border-radius: 0.8rem;
+}
+
+.desativado {
+  display: none;
+}
+.forms.resultado.desativado {
+  display: none;
+}
+
+ .forms div {
+  padding-left: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} 
+
+.forms div select {
+  float: right;
+  background-color: rgb(52, 133, 255);
+  border-radius: 0.4rem;
+  text-align: center;
+  height: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 900;
+}
+
+.forms.resultado select {
+  height: 4rem;
+  border-radius: 0.8rem;
+}

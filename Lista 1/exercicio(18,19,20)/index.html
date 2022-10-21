@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <h1>Calculadora de Áreas de Formas Geométricas</h1>
+    <p>Escolha uma opção abaixo:</p>
+    <div class="opcoes">
+      <button id="button_0" class="formas">
+        <p>Triângulo</p>
+        <img class="img" src="./images/Triangulo.png" alt="" />
+      </button>
+      <button id="button_1" class="formas">
+        <p>Retângulo</p>
+        <img class="img" src="./images/Retangulo.png" alt="" />
+      </button>
+      <button id="button_2" class="formas">
+        <p>Trapézio</p>
+        <img class="img" src="./images/Trapezio.png" alt="" />
+      </button>
+      <button id="button_3" class="formas">
+        <p>Losango</p>
+        <img class="img" src="./images/Losango.png" alt="" />
+      </button>
+    </div>
+    <div id="form_0" class="forms desativado">
+      <p>Altura:</p>
+      <div>
+        <input id="altura" type="number" />
+        <select name="selecao" id="altura_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+      <p>Base:</p>
+      <div>
+        <input id="base" type="number" />
+        <select name="selecao" id="base_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+    </div>
+    <div id="form_1" class="forms desativado">
+      <p>Altura:</p>
+      <div>
+        <input id="alturaTra" type="number" />
+        <select name="selecao" id="alturaTra_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+      
+      <p>Base menor:</p>
+      <div>
+        <input id="baseMe" type="number" />
+        <select name="selecao" id="baseMe_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+      
+        <p>Base maior:</p>
+        <div>
+        <input id="baseMa" type="number" />
+        <select name="selecao" id="baseMa_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+    </div>
+    <div id="form_2" class="forms desativado">
+      
+        <p>Diagonal menor:</p>
+        <div>
+        <input id="diagonalMe" type="number" />
+        <select name="selecao" id="diagonalMe_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+      <p>Diagonal maior:</p>
+      <div>
+        <input id="diagonalMa" type="number" />
+        <select name="selecao" id="diagonalMa_s">
+          <option value="mm">milímetro(mm)</option>
+          <option value="cm">Centímetro(cm)</option>
+          <option selected="selected" value="m">Metro(m)</option>
+          <option value="km">Quilômetro(km)</option>
+        </select>
+      </div>
+    </div>
+    <div id="form_R" class="forms resultado desativado">
+      <p id="resultado">Resultado:</p>
+      <div>
+        <select name="selecao" id="resultado_s">
+          <option value="mm²">Milímetro(mm²)</option>
+          <option value="cm²">Centímetro(cm²)</option>
+          <option selected="selected" value="m²">Metro(m²)</option>
+          <option value="km²">Quilômetro(km²)</option>
+        </select>
+        <button id="button_R" class="calcular">
+          <p>Calcular</p>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./scripts/home.js"></script>
+</html>
