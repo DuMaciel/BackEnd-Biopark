@@ -19,15 +19,35 @@ const idosos = [
 document.addEventListener('DOMContentLoaded', () => {
 
     const butEscrever = document.getElementById('escrever')
-
     butEscrever.addEventListener("click", () => { imprimirTodos(idosos) })
+   
+    
+
+    //ex 5
+    const divIdosos = document.getElementById('idosos')
+    //divIdosos.innerText = idosos[6]['nome']S
+    //ex 5
+   
+    // ex 6 e 7
+    //divIdosos.appendChild(criarElemento(idosos[7]))
+     // ex 6 e 7
+
+    
+    //ex 8
+    escreverIdosos(divIdosos,idosos)
+    //ex 8
+
+    //ex 9
+    const divIdososMaiores60 = document.getElementById('idosos>60')
+    escreverIdososMaiores60(divIdososMaiores60,idosos)
+    //ex 9
 
 });
 
 
 function imprimirTodos(velhos) {
 
-    const velhosReduc = velhos.reduce((prev, { id, ...curr }) => {
+    const velhosReduc = idosos.reduce((prev, { id, ...curr }) => {
 
         return {
             ...prev,
@@ -67,3 +87,27 @@ function imprimirJovens(velhos){
     imprimirTodos(velhos);
 }
 
+
+
+function criarElemento(idoso){
+    const p = document.createElement("p")
+    p.id = idoso['id'];
+    p.innerText = `O ${idoso['nome']} está com ${idoso['idade']} anos , e esta ${idoso['vivo'] ? 'vivo!' : 'morto :('}`
+    return p;
+}
+
+
+function escreverIdosos(tagLocal,idosos){
+    idosos.forEach((elemento, index, vetor) => {
+        tagLocal.appendChild(criarElemento(idoso))
+    });
+}
+
+function escreverIdososMaiores60(tagLocal,idosos){
+    idosos = idosos.filter(idoso => {
+        return idoso['idade']>60;
+    })
+    idosos.forEach(idoso => {
+        tagLocal.appendChild(criarElemento(idoso))
+    });
+}
