@@ -1,0 +1,22 @@
+{
+  "name": "lista-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "start1": "node ex1",
+    "start2": "node ex2",
+    "start3": "node ex3",
+    "start4": "node ex4",
+    "start5": "node ex5",
+    "start6": "node ex6",
+    "start7": "node ex7"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
